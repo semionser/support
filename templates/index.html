@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш любимый продавец на Ozon</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: #005bff;
+            color: white;
+            padding: 1.5rem 1rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .intro {
+            padding: 1.5rem;
+            font-size: 1.2rem;
+        }
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+        }
+        .benefit {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            width: 250px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .benefit:hover {
+            transform: scale(1.05);
+        }
+        .benefit-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-button {
+            position: sticky;
+            bottom: 15px;
+            background: #ffcc00;
+            color: #333;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 100;
+        }
+        .cta-button:hover {
+            transform: scale(1.1);
+            background: #ffdb4d;
+        }
+        .tg-button {
+    margin-top: 10px;
+    background: linear-gradient(90deg, #00c4cc, #7d2ae8);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(125, 42, 232, 0.6), 0 0 20px rgba(0, 196, 204, 0.4);
+    /* Убираем залипание */
+    position: static;
+    bottom: auto;
+    display: inline-block;
+}
+.tg-button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(125, 42, 232, 0.9), 0 0 25px rgba(0, 196, 204, 0.7);
+}
+        footer {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #eee;
+            font-size: 0.9rem;
+        }
+        .socials {
+            margin-top: 0.5rem;
+        }
+        .socials a {
+            display: inline-block;
+            margin: 0 0.5rem;
+        }
+        .socials img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+        .socials img:hover {
+            transform: scale(1.2);
+        }
+        /* Адаптив */
+        @media (max-width: 600px) {
+            header {
+                font-size: 1.5rem;
+            }
+            .benefit {
+                width: 90%;
+            }
+            .cta-button {
+                width: 80%;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>🌟 Поддержите нас на Ozon — поставьте 5 звёзд!</header>
+
+<section class="intro">
+    <p>Каждая ваша звезда помогает нам становиться лучше и радовать вас ещё больше.
+    Оставьте отзыв — и получите при следующей покупке <strong>подарок!</strong> 🎁</p>
+    <p1>Мы так же
+        занимаемся доставкой кроссовок с пойзана , все
+        подробности в телеграмме </p1>
+</section>
+
+<section class="benefits">
+    <div class="benefit">
+        <div class="benefit-icon">🚚</div>
+        <h3>Быстрая доставка</h3>
+        <p>Отправляем заказы в день покупки.</p>
+    </div>
+    <div class="benefit">
+        <div class="benefit-icon">💎</div>
+        <h3>Качественные товары</h3>
+        <p>Только проверенные поставщики.</p>
+    </div>
+    <div class="benefit">
+        <div class="benefit-icon">💬</div>
+        <h3>Поддержка 24/7</h3>
+        <p>Отвечаем в течение часа.</p>
+    </div>
+</section>
+
+<button class="cta-button" onclick="window.open('https://www.ozon.ru/my/reviews', '_blank')">Оставить отзыв</button>
+
+<button class="tg-button" onclick="window.open('https://t.me/username', '_blank')">💬 Написать в Telegram</button>
+
+<footer>
+    <p>Есть вопрос или что-то не устроило? Напишите нам!</p>
+    <div class="socials">
+        <a href="https://t.me/Ozon_Helperbot" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"></a>
+    </div>
+    <p>© 2025 Ozon Магазин</p>
+</footer>
+
+</body>
+</html>
